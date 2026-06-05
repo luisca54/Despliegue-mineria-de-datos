@@ -44,7 +44,7 @@ st.write(
 # MÉTRICAS DEL MODELO
 # ==========================
 
-st.subheader("📊 Desempeño del Modelo")
+st.subheader("Desempeño del Modelo")
 
 col1, col2, col3 = st.columns(3)
 
@@ -70,7 +70,7 @@ with col3:
 # COMPARACIÓN DE MODELOS
 # ==========================
 
-st.subheader("📈 Comparación de Modelos")
+st.subheader("Comparación de Modelos")
 
 resultados = pd.DataFrame({
     "Modelo": [
@@ -93,7 +93,7 @@ st.bar_chart(
 # IMPORTANCIA VARIABLES
 # ==========================
 
-st.subheader("🎯 Variables Más Importantes")
+st.subheader("Variables Más Importantes")
 
 top10 = importance.head(10)
 
@@ -114,7 +114,7 @@ st.pyplot(fig)
 # PREDICCIÓN
 # ==========================
 
-st.header("🔮 Predicción")
+st.header("Predicción")
 
 modo = st.radio(
     "Seleccione el método de entrada",
