@@ -97,7 +97,8 @@ st.subheader("Variables Más Importantes")
 
 top10 = importance.head(10)
 
-fig, ax = plt.subplots(figsize=(8, 5))
+
+fig, ax = plt.subplots(figsize=(4, 2.5))
 
 ax.barh(
     top10["Variable"],
@@ -108,7 +109,8 @@ ax.set_xlabel("Importancia")
 ax.set_ylabel("Variable")
 ax.invert_yaxis()
 
-st.pyplot(fig)
+st.pyplot(fig, use_container_width=False)
+
 
 # ==========================
 # PREDICCIÓN
